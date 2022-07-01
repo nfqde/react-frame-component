@@ -30867,8 +30867,8 @@
 	          _Context.FrameContextProvider,
 	          { value: { document: doc, window: win } },
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'frame-content' },
+	            _react.Fragment,
+	            null,
 	            this.props.children
 	          )
 	        )
