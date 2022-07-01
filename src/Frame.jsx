@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { FrameContextProvider } from './Context';
@@ -105,7 +105,7 @@ export class Frame extends Component {
         contentDidUpdate={contentDidUpdate}
       >
         <FrameContextProvider value={{ document: doc, window: win }}>
-          <div className="frame-content">{this.props.children}</div>
+          <Fragment>{this.props.children}</Fragment>
         </FrameContextProvider>
       </Content>
     );
